@@ -639,7 +639,12 @@
           </div>
         </div>
 
-        <form id="applicationForm">
+        <form action="https://formsubmit.co/codomodubu@gmail.com" method="POST">
+
+  <input type="hidden" name="_subject" value="[Page of us 참여 신청]">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://hnklester.com/#apply">
           <div class="field">
             <label for="name">이름</label>
             <input id="name" name="name" autocomplete="name" required>
@@ -684,28 +689,5 @@
       <span>주관: 언클로즈아카이브 · 후원: 퍼스널스튜디오랩 재팬 · 문의: hello@example.com</span>
     </div>
   </footer>
-
-  <script>
-    const applicationForm = document.querySelector("#applicationForm");
-    const formStatus = document.querySelector("#formStatus");
-
-    applicationForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const data = new FormData(applicationForm);
-      const subject = encodeURIComponent("[Page of us 참여 신청]");
-      const body = encodeURIComponent([
-        `이름: ${data.get("name")}`,
-        `연락처: ${data.get("phone")}`,
-        `이메일: ${data.get("email") || "없음"}`,
-        `행사 일시: 2026년 6월 13일 토요일 15:00-20:00`,
-        `행사 장소: 카페노블, 인천광역시 남동구 호구포로739번길 51`,
-        `만들고 싶은 책: ${data.get("bookType")}`,
-        `남기고 싶은 말: ${data.get("message") || "없음"}`
-      ].join("\n"));
-
-      formStatus.textContent = "메일 작성창을 여는 중입니다.";
-      window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
-    });
-  </script>
 </body>
 </html>
