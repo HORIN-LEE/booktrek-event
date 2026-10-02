@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page of us : 우리들의 페이지 | 참여 신청</title>
-  <meta name="description" content="UNClOSE Archive의 책 만들기 팝업 Page of us : 우리들의 페이지 소개와 참여 신청 페이지입니다.">
+  <title>Page of us : 나를 읽는 시간 | 참여 신청</title>
+  <meta name="description" content="UNClOSE Archive의 책 만들기 팝업 Page of us에서 나를 읽는 시간을 함께 쓰고 완성합니다.">
   <style>
     :root {
       --navy: #08286e;
@@ -94,6 +94,10 @@
       align-items: center;
     }
 
+    .hero-grid > * {
+      min-width: 0;
+    }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -141,6 +145,7 @@
       color: #2f3847;
       font-size: 20px;
       word-break: keep-all;
+      overflow-wrap: break-word;
     }
 
     .meta-row {
@@ -307,7 +312,7 @@
 
     .poster-layout {
       display: grid;
-      grid-template-columns: .78fr 1fr;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
       gap: 38px;
       align-items: start;
     }
@@ -487,7 +492,7 @@
       h1 {
         font-size: 64px;
         line-height: 0.88;
-        letter-spacing: -0.02em;
+        letter-spacing: 0;
       }
 
       .sub-title {
@@ -523,8 +528,8 @@
       <img src="./unclose-archive-logo.png" alt="UNClOSE Archive Independent Publishing House">
     </a>
     <div class="nav-links">
-      <a href="#concepts">콘셉트</a>
-      <a href="#poster">포스터</a>
+      <a href="#concepts">책 구성</a>
+      <a href="#poster">행사 정보</a>
       <a href="#apply">신청</a>
     </div>
   </nav>
@@ -533,10 +538,10 @@
     <div class="shell hero-grid">
       <div>
         <div class="eyebrow">Book Making <span class="pill">POP-UP</span></div>
-        <h1>Page<br>of us <span class="sub-title">: 우리들의 페이지</span></h1>
+        <h1>Page<br>of us <span class="sub-title">: 나를 읽는 시간</span></h1>
         <p class="hero-copy">
-          나만의 이야기를 담은 책을 만드는 북메이킹 팝업입니다.
-          나를 설명하고, 하고 싶은 것을 기록하고, 상상 속 이야기를 한 권의 책으로 완성해보세요.
+          오늘의 나를 적어두면 다음의 내가 읽을 수 있습니다.<br>
+          질문을 따라 지금의 마음과 나다운 장면을 쓰고, 한 권의 기록책을 완성해보세요.
         </p>
         <ul class="meta-row" aria-label="행사 정보">
           <li>2026. 10. 9. 금요일</li>
@@ -545,12 +550,12 @@
         </ul>
         <div class="hero-actions">
           <a class="button primary" href="#apply">참여 신청하기</a>
-          <a class="button secondary" href="#concepts">4가지 책 보기</a>
+          <a class="button secondary" href="#concepts">책 구성 보기</a>
         </div>
       </div>
 
-      <figure class="poster-frame" aria-label="Page of us 행사 포스터">
-        <img src="./page-of-us-main-poster.png" alt="Page of us 우리들의 페이지 행사 메인 포스터">
+      <figure class="poster-frame" aria-label="나를 읽는 시간 책 구성 미리보기">
+        <img src="./reading-myself-book.png" alt="나를 읽는 시간 표지와 주요 내지 구성">
       </figure>
     </div>
   </header>
@@ -558,33 +563,33 @@
   <main>
     <section class="section shell" id="concepts">
       <div class="section-header">
-        <div class="section-label">Four Concepts</div>
-        <h2>나의 이야기를 담은 4가지 콘셉트의 책을 만들 수 있어요.</h2>
+        <div class="section-label">Book Format</div>
+        <h2>한 권의 책, 「나를 읽는 시간」을 함께 완성합니다.</h2>
         <p class="lead">
-          각 콘셉트는 질문과 기록을 따라가며 완성됩니다. 가볍게 써도 좋고, 깊게 남겨도 좋습니다.
+          약 40분 동안 질문을 따라 쓰며 지금의 나를 기록합니다. 가볍게 적어도 좋고, 오래 남기고 싶은 마음을 담아도 좋습니다.
         </p>
       </div>
 
       <div class="concept-grid">
         <article class="concept-card">
-          <div class="mark">1</div>
-          <h3>나 사용설명서</h3>
-          <p>나를 더 잘 이해하고, 나를 설명하는 사용자 가이드북</p>
+          <div class="mark">02</div>
+          <h3>오늘, 함께 쓰기</h3>
+          <p>가벼운 질문으로 지금의 나를 적고, 이 책의 제목과 소개를 정합니다.</p>
         </article>
         <article class="concept-card">
-          <div class="mark">2</div>
-          <h3>버킷리스트 매뉴얼</h3>
-          <p>하고 싶은 것들을 기록하고, 내일의 나를 그려보는 책</p>
+          <div class="mark">04</div>
+          <h3>나다웠던 한 장면</h3>
+          <p>최근 일주일 또는 가장 나다웠던 순간을 돌아보고 한 장면을 기록합니다.</p>
         </article>
         <article class="concept-card">
-          <div class="mark">3</div>
-          <h3>나는 연애할때?</h3>
-          <p>연애 밸런스부터 이상형까지 솔직하고 가벼운 연애 탐구서</p>
+          <div class="mark">10</div>
+          <h3>오늘의 저자 소개</h3>
+          <p>앞에서 쓴 문장을 바탕으로 지금의 나를 소개하는 세 문장을 완성합니다.</p>
         </article>
         <article class="concept-card">
-          <div class="mark">4</div>
-          <h3>마이 리틀 스토리북</h3>
-          <p>상상 속 이야기와 일상을 나만의 동화로 완성하는 이야기책</p>
+          <div class="mark">31</div>
+          <h3>다시 펼친 날</h3>
+          <p>예전의 답을 다시 읽으며 달라진 생각과 지금 마음에 남는 문장을 적습니다.</p>
         </article>
       </div>
     </section>
@@ -592,16 +597,19 @@
     <section class="section poster-section" id="poster">
       <div class="shell poster-layout">
         <div class="poster-small">
-          <img src="./page-of-us-info-poster.png" alt="Page of us 북메이킹 팝업 상세 포스터">
+          <img src="./reading-myself-book.png" alt="나를 읽는 시간 표지, 내지와 판권 구성">
         </div>
         <div>
           <div class="section-label">Event Info</div>
-          <h2>Make your page, make our story.</h2>
+          <h2>오늘 함께 쓰고, 내일 이어가는 기록.</h2>
           <p class="lead">
-            Page of us는 서로 다른 페이지가 모여 우리들의 이야기가 되는 시간을 제안합니다.
-            2026년 10월 9일 금요일, 자기계발센터 감동카페에서 원하는 책 콘셉트를 고르고 자신만의 기록물을 완성합니다.
+            2026년 10월 9일 금요일, 자기계발센터 감동카페에서 질문을 따라 쓰며 지금의 나를 한 권의 책으로 완성합니다.
           </p>
           <div class="info-list">
+            <div class="info-item">
+              <strong>만드는 책</strong>
+              <span>나를 읽는 시간 · 32쪽 기록책</span>
+            </div>
             <div class="info-item">
               <strong>일시</strong>
               <span>2026년 10월 9일 금요일 · 14:00 - 17:00</span>
@@ -619,8 +627,8 @@
               <span>브랜딩연구소 퍼스널스튜디오랩 재팬</span>
             </div>
             <div class="info-item">
-              <strong>참여 방식</strong>
-              <span>아래 신청서를 작성하면 안내 연락을 드립니다.</span>
+              <strong>진행 방식</strong>
+              <span>약 40분 동안 함께 쓰고, 책 제목과 저자 소개까지 완성합니다.</span>
             </div>
           </div>
         </div>
@@ -642,10 +650,11 @@
         </div>
 
         <form action="https://formsubmit.co/codomodubu@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="[Page of us 참여 신청]">
+          <input type="hidden" name="_subject" value="[Page of us - 나를 읽는 시간 참여 신청]">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_next" value="https://booktrek-event.vercel.app/thanks.html">
+          <input type="hidden" name="bookType" value="나를 읽는 시간">
           <div class="field">
             <label for="name">이름</label>
             <input id="name" name="name" autocomplete="name" required>
@@ -665,19 +674,8 @@
             </select>
           </div>
           <div class="field">
-            <label for="bookType">만들고 싶은 책</label>
-            <select id="bookType" name="bookType" required>
-              <option value="">선택해주세요</option>
-              <option>나 사용설명서</option>
-              <option>버킷리스트 매뉴얼</option>
-              <option>나는 연애할때?</option>
-              <option>마이 리틀 스토리북</option>
-              <option>현장에서 고를게요</option>
-            </select>
-          </div>
-          <div class="field">
             <label for="message">남기고 싶은 말</label>
-            <textarea id="message" name="message" placeholder="동행 인원, 방문 희망 시간, 궁금한 점 등을 적어주세요."></textarea>
+            <textarea id="message" name="message" placeholder="동행 인원, 궁금한 점 등을 적어주세요."></textarea>
           </div>
           <label class="consent">
             <input type="checkbox" required>
@@ -692,7 +690,7 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <strong>Page of us : 우리들의 페이지</strong>
+      <strong>Page of us : 나를 읽는 시간</strong>
       <span>주관: 언클로즈아카이브 · 후원: 퍼스널스튜디오랩 재팬</span>
     </div>
   </footer>
